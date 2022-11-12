@@ -1,0 +1,18 @@
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <p>API</p>
+    <ul>
+      <li>
+        CAT FACT
+      </li>
+    </ul>
+  </mat-drawer>
+  <div class="sidenav-content content">
+    <button mat-button color="primary" class="btn-size" type="button" (click)="drawer.toggle()">
+      NAVIGATION
+    </button>
+  </div>
+  <div class="content">
+    <app-cat-fact></app-cat-fact>
+  </div>
+</mat-drawer-container>
