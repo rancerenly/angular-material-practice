@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CatFactComponent } from './components/cat-fact/cat-fact.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { JsonPlaceholderComponent } from './components/json-placeholder/json-placeholder.component';
 
 const routes: Routes = [
   {
@@ -10,6 +11,9 @@ const routes: Routes = [
   },
   {
     path: 'cat-fact', component: CatFactComponent
+  },
+  {
+    path: 'json-placeholder', component: JsonPlaceholderComponent
   },
   {
     path: '**', component: PageNotFoundComponent

@@ -8,10 +8,4 @@ import { catchError, retry } from 'rxjs/operators';
 })
 export class CatFactService {
 
-  /*constructor(private http: HttpClient) { }
-  configUrl = "https://catfact.ninja/fact";
-
-  getCatFact() {
-    return this.http.get(this.configUrl);
-  }*/
 }

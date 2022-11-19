@@ -1,0 +1,25 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  &.button {
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+mat-toolbar {
+  margin-bottom: 1rem;
+}
+mat-icon {
+  margin-right: 5px;
+}
+
+.no-select {
+  cursor: pointer;
+  user-select: none;
+}

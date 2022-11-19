@@ -5,15 +5,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cat-fact.component.scss']
 })
 export class CatFactComponent implements OnInit {
-  data: any;
 
   constructor() { }
 
   ngOnInit(): void {
 
-  }/*
-  getCatFact() {
-    this.data = this.catFactService.getCatFact();
-    console.log(this.data);
-  }*/
+  }
 }
