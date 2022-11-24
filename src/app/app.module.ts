@@ -28,6 +28,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { JsonPlaceholderComponent } from './components/json-placeholder/json-placeholder.component';
 import { AllPostsComponent } from './components/json-placeholder/all-posts/all-posts.component';
 import { PostDetailsComponent } from './components/json-placeholder/post-details/post-details.component';
+import { UsersComponent } from './components/json-placeholder/users/users.component';
 
 @NgModule({
     declarations: [
@@ -40,6 +41,7 @@ import { PostDetailsComponent } from './components/json-placeholder/post-details
         PageNotFoundComponent,
         AllPostsComponent,
         PostDetailsComponent,
+        UsersComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
