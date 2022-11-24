@@ -1,13 +1,13 @@
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
-import { JsonPlaceholderService } from '../../services/json-placeholder.service';
+import { JsonPlaceholderService } from '../../services/postsServices/posts.service';
 import { IPost } from '../../models/IPost';
 
 @Component({
   selector: 'app-json-placeholder',
-  templateUrl: './json-placeholder.component.html',
-  styleUrls: ['./json-placeholder.component.scss']
+  templateUrl: './posts.component.html',
+  styleUrls: ['./posts.component.scss']
 })
-export class JsonPlaceholderComponent implements OnInit {
+export class PostsComponent implements OnInit {
 
   public isViewPosts: boolean = true;
 

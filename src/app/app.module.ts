@@ -25,17 +25,17 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/UI/header/header.component';
 import { FooterComponent } from './components/UI/footer/footer.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { JsonPlaceholderComponent } from './components/json-placeholder/json-placeholder.component';
-import { AllPostsComponent } from './components/json-placeholder/all-posts/all-posts.component';
-import { PostDetailsComponent } from './components/json-placeholder/post-details/post-details.component';
-import { UsersComponent } from './components/json-placeholder/users/users.component';
+import { PostsComponent } from './components/posts/posts.component';
+import { AllPostsComponent } from './components/posts/all-posts/all-posts.component';
+import { PostDetailsComponent } from './components/posts/post-details/post-details.component';
+import { UsersComponent } from './components/posts/users/users.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
         CatFactComponent,
-        JsonPlaceholderComponent,
+        PostsComponent,
         HeaderComponent,
         FooterComponent,
         PageNotFoundComponent,
