@@ -1,0 +1,16 @@
+<div class="post-card" *ngIf="post">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{post.id}}</mat-card-title>
+      <mat-card-subtitle>{{post.userId}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{post.body}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary">LIKE</button>
+      <button mat-button color="warning">SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
