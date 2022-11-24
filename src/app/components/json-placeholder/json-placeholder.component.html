@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row align-items-start">
-    <div class="col-4">
+    <div class="col-3">
       <div>
         <form class="find-post-form" #myForm="ngForm">
           <mat-form-field class="col-8 post-input-field">
@@ -8,16 +8,20 @@
             <input name="post-id" matInput type="number" [(ngModel)]="postId">
             <mat-hint align="start"><strong>Enter the post id here</strong></mat-hint>
           </mat-form-field>
-          <button class="col-2 post-find-button" mat-flat-button color="primary" (click)="showPost()">Find</button>
+          <button class="col-1 post-find-button" mat-flat-button color="primary" (click)="showPost()">Find</button>
         </form>
       </div>
       <div>
         <button mat-flat-button color="primary" (click)="showPosts()">Show</button>
       </div>
     </div>
-    <div class="col-8">
-      <app-all-posts></app-all-posts>
-      <app-post-details></app-post-details>
+    <div class="col-9">
+      <div *ngIf="!isViewPosts">
+        <app-all-posts [posts]="posts"></app-all-posts>
+      </div>
+      <div>
+        <app-post-details [post]="post"></app-post-details>
+      </div>
     </div>
   </div>
 </div>

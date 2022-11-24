@@ -9,6 +9,8 @@ import { IPost } from '../../models/IPost';
 })
 export class JsonPlaceholderComponent implements OnInit {
 
+  public isViewPosts: boolean = true;
+
   post: IPost = {
     userId: 0,
     id: 0,
@@ -16,22 +18,25 @@ export class JsonPlaceholderComponent implements OnInit {
     body: ''
   };
 
-  @Input() postId!: number;
-
+  postId: number = 1;
   posts: IPost[] = [];
 
-  constructor(public placeholderService: JsonPlaceholderService) { }
+  constructor(public placeholderService: JsonPlaceholderService) { 
+
+  }
 
   ngOnInit() {
+
   }
 
-  showPosts() {
+  showPosts(): void {
+    this.isViewPosts = false;
     this.placeholderService.getPosts()
     .subscribe((data: IPost[]) => this.posts = data);
-    console.log(this.posts);
   }
 
-  showPost() {
+  showPost(): void {
+    this.isViewPosts = true;
     this.placeholderService.getPost(this.postId)
     .subscribe((data: IPost) => this.post = data);
   }

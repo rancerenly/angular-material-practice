@@ -10,8 +10,12 @@ export class PostDetailsComponent implements OnInit {
 
   constructor() { }
 
-  @Input()
-  post!: IPost;
+  @Input() post: IPost = {
+    userId: 0,
+    id: 0,
+    title: '',
+    body: ''
+  };
 
   ngOnInit(): void {
     

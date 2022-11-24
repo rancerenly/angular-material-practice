@@ -9,9 +9,12 @@ import { JsonPlaceholderComponent } from '../json-placeholder.component';
 })
 export class AllPostsComponent implements OnInit {
 
-  constructor(public jsonPlaceholderComponet: JsonPlaceholderComponent) { }
+  constructor() { }
+
+  @Input() posts: IPost[] = [];
 
   ngOnInit(): void {
+
   }
 
 }
