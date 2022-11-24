@@ -1,7 +1,7 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async, inject } from '@angular/core/testing';
-import { JsonPlaceholderService } from './json-placeholder.service';
+import { JsonPlaceholderService } from './posts.service';
 
 describe('Service: JsonPlaceholder', () => {
   beforeEach(() => {

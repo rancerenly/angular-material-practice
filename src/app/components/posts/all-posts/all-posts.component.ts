@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IPost } from 'src/app/models/IPost';
-import { JsonPlaceholderComponent } from '../json-placeholder.component';
+import { PostsComponent } from '../posts.component';
 
 @Component({
   selector: 'app-all-posts',
